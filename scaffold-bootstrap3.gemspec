@@ -27,4 +27,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "railties", [">= 3.1", "< 4.1"]
 
   spec.add_development_dependency "rails", [">= 3.1", "< 4.1"]
+  spec.add_development_dependency 'appraisal', '>= 0.3.8'
 end
