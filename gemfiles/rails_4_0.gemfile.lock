@@ -1,7 +1,7 @@
 PATH
   remote: /Users/paulsutcliffe/rails-apps/scaffold-bootstrap3
   specs:
-    scaffold-bootstrap3 (0.0.3)
+    scaffold-bootstrap3 (0.0.4)
       actionpack (>= 3.1, < 4.1)
       activesupport (>= 3.1, < 4.1)
       haml (>= 3.1, < 4.1)
