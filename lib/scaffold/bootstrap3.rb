@@ -33,8 +33,8 @@ module Scaffold
                 end
               else
                 # will only apply if Rails 4, which includes 'action_view/dependency_tracker'
-                require 'action_view/dependency_tracker'
-                ActionView::DependencyTracker.register_tracker :haml, ActionView::DependencyTracker::ERBTracker
+                # require 'action_view/dependency_tracker'
+                # ActionView::DependencyTracker.register_tracker :haml, ActionView::DependencyTracker::ERBTracker
 
                 if ::Rails.env.development?
                   # recalculate cache digest keys for each request

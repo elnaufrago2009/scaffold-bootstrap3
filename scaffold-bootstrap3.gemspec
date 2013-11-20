@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["paul@kosmyka.com"]
   spec.description   = "Scaffold Bootstrap3 takes the advantage of bootstrap3 to generate your scaffolds and controllers with a basic bootstrap classes, for a minimun effort development."
   spec.summary       = "Generate yout scaffolds with bootstrap3 classes for minimum effort"
-  spec.homepage         = "http://github.com/paulsutcliffe/scaffold-bootstrap3"
+  spec.homepage      = "http://github.com/paulsutcliffe/scaffold-bootstrap3"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
