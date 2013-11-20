@@ -6,7 +6,6 @@ require 'scaffold/bootstrap3/version'
 Gem::Specification.new do |spec|
   spec.name          = "scaffold-bootstrap3"
   spec.version       = Scaffold::Bootstrap3::VERSION
-  s.platform         = Gem::Platform::RUBY
   spec.authors       = ["Paul Sutcliffe"]
   spec.email         = ["paul@kosmyka.com"]
   spec.description   = "Scaffold Bootstrap3 takes the advantage of bootstrap3 to generate your scaffolds and controllers with a basic bootstrap classes, for a minimun effort development."
