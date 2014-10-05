@@ -1,17 +1,11 @@
-#region-<%= plural_table_name %>.container
-  .region
-    .region-title
-      %h1= page_title!('<%= singular_table_name %>')
-
-  .region
+.page-header
+  %h1 <%= plural_table_name.capitalize %>
 <% for attribute in attributes -%>
-    %p
-      %b <%= attribute.human_name %>:
-      = @<%= singular_table_name %>.<%= attribute.name %>
+  %p
+    %b <%= attribute.human_name %>:
+    = @<%= singular_table_name %>.<%= attribute.name %>
 <% end -%>
+%br
+= link_to 'Editar', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), class: 'btn btn-success'
+= link_to 'Regresar', <%= index_helper %>_path, class: 'btn btn-warning'
 
-  .region
-    - if current_admin
-      .admin-controls
-        = link_to 'Editar', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), class: 'btn btn-success'
-    = link_to 'Regresar', <%= index_helper %>_path, class: 'btn btn-warning'

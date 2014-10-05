@@ -9,8 +9,10 @@
 <% for attribute in attributes -%>
   .form-group
     = f.label :<%= attribute.name %>, class: 'col-sm-2 control-label'
-    .col-sm-10
+    .col-sm-3
       = f.<%= attribute.field_type %> :<%= attribute.name %>, class: 'form-control'
 <% end -%>
-  .actions
-    = f.submit 'Guardar', class: 'btn btn-default'
+  .form-group
+    .col-sm-2
+    .col-sm-3
+      = f.submit 'Guardar', class: 'btn btn-default'
